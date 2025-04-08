@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/* General Reset */
+* {
+  margin: 1em;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://de7i3bh7bgh0d.cloudfront.net/2025/01/07/00/09/26/71ea757d-c3cf-4256-a677-b51e74959837/NAR_The_Complete_Series_LE_Blog_1200x630.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* Navigation Bar */
+.navbar {
+  font-family: 'Impact', sans-serif;
+  font-size: 2em;
+  color: #f39c12; /* Orange like Naruto's jumpsuit */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  margin-top: 50px;
+  text-transform: uppercase;
+
+}
+.navbar a {
+  color: #fbe407;
+  text-decoration: none;
+}
+.navbar li {
+  display: inline;
+ 
+}
+
+/* This is where we begin the id and class definitions */
+#p1 {
+  background-color: #ffe182;
+  color: #0b0b0b;
+  width: 50%;
+  padding: 1em;
+  border-radius: 2em;
+  
+}
+#p2 {
+  background-color: #f2a30b;
+  color: #0b0b0b;
+  padding: 1em;
+  border-radius: 2em;
+  width: 50%;
+}
+
+/* Footer Style */
+.footer {
+  width: 50%; /* Optional: Limits the width of the content */
+  background-image: url("images/logo.svg");
+  background-size: 300px 200px; /* 300px width and 200px height */
+  background-position:left;
+  background-repeat: no-repeat;
+  color: azure;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+  
+.footer p {
+  background-image: none;
+  background-color: aqua;
+
+  }
+  
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 50%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
